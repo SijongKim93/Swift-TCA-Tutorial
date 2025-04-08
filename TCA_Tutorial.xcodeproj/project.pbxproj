@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		032BBF0C2DA4D9D600DD3EE0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 032BBF0B2DA4D9D600DD3EE0 /* ComposableArchitecture */; };
+		4D8C84462DA56E9500F5D830 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8C84452DA56E9500F5D830 /* Testing.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D8C843D2DA5589000F5D830 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		032BBEF92DA4D91A00DD3EE0 /* TCA_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8C84452DA56E9500F5D830 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8C84462DA56E9500F5D830 /* Testing.framework in Frameworks */,
 				032BBF0C2DA4D9D600DD3EE0 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,9 +54,11 @@
 			isa = PBXGroup;
 			children = (
 				032BBEFB2DA4D91A00DD3EE0 /* TCA_Tutorial */,
+				4D8C84392DA5589000F5D830 /* Frameworks */,
 				032BBEFA2DA4D91A00DD3EE0 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		032BBEFA2DA4D91A00DD3EE0 /* Products */ = {
 			isa = PBXGroup;
@@ -48,6 +66,14 @@
 				032BBEF92DA4D91A00DD3EE0 /* TCA_Tutorial.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4D8C84392DA5589000F5D830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D8C84452DA56E9500F5D830 /* Testing.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +86,7 @@
 				032BBEF52DA4D91A00DD3EE0 /* Sources */,
 				032BBEF62DA4D91A00DD3EE0 /* Frameworks */,
 				032BBEF72DA4D91A00DD3EE0 /* Resources */,
+				4D8C843D2DA5589000F5D830 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -249,6 +277,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
